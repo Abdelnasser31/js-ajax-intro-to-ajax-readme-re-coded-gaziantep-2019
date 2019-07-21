@@ -10,7 +10,7 @@ function showRepositories() {
   let repos = JSON.parse(this.responseText);
   
   let repoList = '<ul>';
-  for (let i = 0; i < this.repos.length ; i++){
+  for (let i = 0; i < repos.length ; i++){
   repoList += '<li>' + repos[i]['name'] + '</li>';
 }     
 repoList += '</ul>';
