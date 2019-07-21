@@ -7,7 +7,7 @@ function getRepositories() {
   req.send();
 }
 function showRepositories() {
-  let repos = this.response.json();
+  let repos = this.responseText.json();
 let repoList = '<ul>';
 for (let i = 0; i < this.response.length ; i++){
   repoList += '<li>' + repos[i]['name'] + '</li>';
