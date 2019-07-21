@@ -7,9 +7,10 @@ function getRepositories() {
   req.send();
 }
 function showRepositories() {
+  let repos = this.response.JSON();
 let repoList = '<ul>';
 for (let i = 0; i < this.response.length ; i++){
-  repoList += '<li>' + this.response[i]['name'] + '</li>';
+  repoList += '<li>' + repos[i]['name'] + '</li>';
 }
 repoList += '</ul>';
 document.getElementById('repositories').innerHTML = repoList;
