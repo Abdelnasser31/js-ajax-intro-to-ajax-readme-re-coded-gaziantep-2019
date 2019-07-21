@@ -9,6 +9,6 @@ function getRepositories() {
 function showRepositories() {
 let repoList = '<ul>';
 for (let i = 0; i < this.response.length ; i++){
-  repoList +=
+  repoList += '<li>' + this.rs
 }
 }
