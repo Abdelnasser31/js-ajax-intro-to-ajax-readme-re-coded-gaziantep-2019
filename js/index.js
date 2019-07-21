@@ -7,5 +7,8 @@ function getRepositories() {
   req.send();
 }
 function showRepositories() {
-console.log(this.responseText);
+let repoList = '<ul>';
+for (let i = 0; i < this.response.length ; i++){
+  repoList +=
+}
 }
