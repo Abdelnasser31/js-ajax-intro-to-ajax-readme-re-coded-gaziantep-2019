@@ -21,3 +21,8 @@ function showRepositories() {
     .join('')}</ul>`;
 document.getElementById('repositories').innerHTML = repoList;
 }
+
+function getCommits(el){
+  const name = el.dataset.repo;
+  
+}
