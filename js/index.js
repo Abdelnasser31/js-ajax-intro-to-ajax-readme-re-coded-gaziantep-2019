@@ -9,7 +9,7 @@ function getRepositories() {
 function showRepositories() {
 let repoList = '<ul>';
 for (let i = 0; i < this.response.length ; i++){
-  repoList += '<li>' + this.rsposneText.json()[i]['name'] + '</li>';
+  repoList += '<li>' + this.responsei]['name'] + '</li>';
 }
 repoList += '</ul>';
 document.getElementById('repositories').innerHTML = repoList;
