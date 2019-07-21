@@ -12,7 +12,7 @@ function showRepositories() {
   let repoList = '<ul>';
   for (let i = 0; i < this.responseText.length ; i++){
         repoList += '<li>' + result[i]['name'] + '</li>';
-}
+}     
 repoList += '</ul>';
 document.getElementById('repositories').innerHTML = repoList;
 }
