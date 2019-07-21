@@ -9,9 +9,9 @@ function getRepositories() {
 function showRepositories() {
   let json= JSON.parse(this.responseText);
   let result = json.results;
-let repoList = '<ul>';
-for (let i = 0; i < this.responseText.length ; i++){
-  repoList += '<li>' + result[i]['name'] + '</li>';
+  let repoList = '<ul>';
+  for (let i = 0; i < this.responseText.length ; i++){
+        repoList += '<li>' + result[i]['name'] + '</li>';
 }
 repoList += '</ul>';
 document.getElementById('repositories').innerHTML = repoList;
