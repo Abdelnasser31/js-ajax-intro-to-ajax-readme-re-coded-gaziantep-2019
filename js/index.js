@@ -5,3 +5,8 @@ function getRepositories() {
   req.open('GET',`${baseUrl}/users/abdelnasser31/repos`);
   req.send();
 }
+function showRepositories() {
+
+  
+  
+}
