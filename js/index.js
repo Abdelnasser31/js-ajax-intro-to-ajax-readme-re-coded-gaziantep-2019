@@ -28,3 +28,7 @@ function getCommits(el){
   req.addEventListener('GET','https://api.github.com/repos/abdelnasser31/' +name+'/commits');
   req.send;
 }
+function showCommits() {
+  const commit = JSON.parse(this.responseText);
+  const commitList = `<ul>${commits.map(commit => '<li><strong>' + commit.author.login + '</strong> - ' + commit.commit.message + '</li>').join('')
+}
